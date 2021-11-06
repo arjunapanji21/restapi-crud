@@ -1,3 +1,3 @@
 # Credential
-> username: admin
-> password: adminadmin
+username: admin
+password: adminadmin
