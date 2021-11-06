@@ -1,0 +1,48 @@
+GET http://localhost:8080/users
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODVmNjNjODk1YjZlNjQyODU5NzgwMSIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiVXNlciIsImlhdCI6MTYzNjE2OTM3MCwiZXhwIjoxNjM2MTcyOTcwfQ.G36wo3jo7cpqj3SlZzrcq31EsfLJPq42m69ykhrWRTE
+
+###
+
+GET http://localhost:8080/users/all
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODRkNjc2MTVhMTEyZmI5MDA3MmE5MCIsInVzZXJuYW1lIjoidXNlciIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjM2MTU5NjQ5LCJleHAiOjE2MzYxNjMyNDl9.LnQ0x-OgKgqsmnkNIkK26FIhYzUDuhO9dydgUEpKm2U
+
+###
+
+GET http://localhost:8080/users/6184d3aaf3274de28d8c54b3
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODRkM2FhZjMyNzRkZTI4ZDhjNTRiMyIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2MzYxMzEyNTMsImV4cCI6MTYzNjEzNDg1M30.G8-cbMRzLXCgBeIBktnkoJpQrqdh_RWwBQiAyBLFa90
+
+###
+
+POST http://localhost:8080/users/create
+Content-Type: application/json
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJyb2xlIjoiVXNlciIsImlhdCI6MTYzNjEyODEyNCwiZXhwIjoxNjM2MTMxNzI0fQ.6d6Gv1_vPd2zkbIFj72wYIybTp12QNRZZ1nhpcaXSyU
+
+{
+    "username": "admin",
+    "password": "adminadmin"
+}
+
+###
+
+POST http://localhost:8080/users/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "adminadmin"
+}
+
+###
+
+DELETE http://localhost:8080/users/618554a204c694acdacd0c1b
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNjM2MTI3NDUzLCJleHAiOjE2MzYxMzEwNTN9.zylR0JkQOnGNgHgZNK5gaiWLpVbJFiF7MQ-Mg4Dqbe4
+
+###
+
+PATCH http://localhost:8080/users/6185f63c895b6e6428597801
+Content-Type: application/json
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNjM2MTI3NDUzLCJleHAiOjE2MzYxMzEwNTN9.zylR0JkQOnGNgHgZNK5gaiWLpVbJFiF7MQ-Mg4Dqbe4
+
+{
+    "role": "Admin"
+}
